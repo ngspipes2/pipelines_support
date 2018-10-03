@@ -1,25 +1,9 @@
-Properties : { }
-
-params.Dummy_Parameter = "dummy parameter value"
-
-Repositories : [
-	ToolRepository Dummy_Tool_Repository_Descriptor : {
-		config : { }
-	}
-	PipelineRepository Dummy_Pipeline_Repository_Descriptor : {
-		config : { }
-	}
-]
-
-Outputs : {
-	Dummy_Output : null[null]
+Properties : {
+	author : "8097dea2-4f0b-4a7b-9f9e-cf7dcdfdf5e1"
 }
 
-Steps : [
-	Step Dummy_Step_1 : {
-		exec : RepositoryId[ToolId][CommandId]
-	}
-	Step Dummy_Step_2 : {
-		exec : RepositoryId[PipelineId]
-	}
-]
+Repositories : [ ]
+
+Outputs : { }
+
+Steps : [ ]

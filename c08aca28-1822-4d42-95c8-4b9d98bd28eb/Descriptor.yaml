@@ -1,0 +1,40 @@
+---
+name: "c08aca28-1822-4d42-95c8-4b9d98bd28eb"
+description: null
+author: null
+version: null
+documentation: null
+parameters:
+- !<pt.isel.ngspipes.dsl_core.descriptors.pipeline.jackson_entities.typed.parameter.TypedParameterDescriptor>
+  name: "Dummy_Parameter"
+  defaultValue: "dummy parameter value"
+outputs:
+- !<pt.isel.ngspipes.dsl_core.descriptors.pipeline.jackson_entities.typed.output.TypedOutputDescriptor>
+  name: "Dummy_Output"
+  stepId: null
+  outputName: null
+repositories:
+- !<pt.isel.ngspipes.dsl_core.descriptors.pipeline.jackson_entities.typed.repository.TypedToolRepositoryDescriptor>
+  id: "Dummy_Tool_Repository_Descriptor"
+  location: null
+  configuration: null
+- !<pt.isel.ngspipes.dsl_core.descriptors.pipeline.jackson_entities.typed.repository.TypedPipelineRepositoryDescriptor>
+  id: "Dummy_Pipeline_Repository_Descriptor"
+  location: null
+  configuration: null
+steps:
+- id: "Dummy_Step_1"
+  exec: !<pt.isel.ngspipes.dsl_core.descriptors.pipeline.jackson_entities.typed.step.exec.TypedCommandExecDescriptor>
+    repositoryId: "RepositoryId"
+    toolName: "ToolId"
+    commandName: "CommandId"
+  executionContext: null
+  inputs: null
+  spread: null
+- id: "Dummy_Step_2"
+  exec: !<pt.isel.ngspipes.dsl_core.descriptors.pipeline.jackson_entities.typed.step.exec.TypedPipelineExecDescriptor>
+    repositoryId: "RepositoryId"
+    pipelineName: "PipelineId"
+  executionContext: null
+  inputs: null
+  spread: null

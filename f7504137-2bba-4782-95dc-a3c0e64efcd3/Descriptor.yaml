@@ -1,0 +1,36 @@
+---
+name: "f7504137-2bba-4782-95dc-a3c0e64efcd3"
+description: null
+author: null
+version: null
+documentation: null
+parameters:
+- name: "Dummy_Parameter"
+  defaultValue: "dummy parameter value"
+outputs:
+- name: "Dummy_Output"
+  stepId: null
+  outputName: null
+repositories:
+- type: "Tool"
+  id: "Dummy_Tool_Repository_Descriptor"
+- type: "Pipeline"
+  id: "Dummy_Pipeline_Repository_Descriptor"
+steps:
+- id: "Dummy_Step_1"
+  exec:
+    type: "Command"
+    commandName: "CommandId"
+    toolName: "ToolId"
+    repositoryId: "RepositoryId"
+  executionContext: null
+  inputs: null
+  spread: null
+- id: "Dummy_Step_2"
+  exec:
+    type: "Pipeline"
+    pipelineName: "PipelineId"
+    repositoryId: "RepositoryId"
+  executionContext: null
+  inputs: null
+  spread: null

@@ -8,6 +8,10 @@ Properties: {
 Repositories: [
     ToolRepository repo: {
         location: "https://github.com/ngspipes2/tools_support"
+        config: {
+            username: "NGSPipesShare"
+            token: "4104311fb1a5db310b2eed6f765a168355d7cbd8"
+        }
     }
 ]
 

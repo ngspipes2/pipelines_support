@@ -13,7 +13,7 @@ Repositories: [
         location: "https://github.com/ngspipes2/pipelines_support"
         config: {
             username: "NGSPipesShare"
-            token: "a8e78f2a902b35dcf9f8bf9686fac2c3ae9df19e"
+            token: "4104311fb1a5db310b2eed6f765a168355d7cbd8"
         }
     }
 ]

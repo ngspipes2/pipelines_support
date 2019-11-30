@@ -47,7 +47,7 @@ Steps: [
         exec: repo[Blast][blastx]
         execution_context: "DockerConfig"
         inputs: {
-            db: makeblastdb[outFile]
+            db: makeblastdb[outFileName]
             query: velvet[contigs]
             out: params.blastx_out
         }
